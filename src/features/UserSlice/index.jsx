@@ -24,7 +24,7 @@ export const userApi = createApi({
         }),
         changePassword: builder.mutation({
             query: ({ id, password }) => ({
-                url: `/update-password/${id}`,
+                url: `user/update-password/${id}`,
                 method: 'PUT',
                 body: password,
             }),
