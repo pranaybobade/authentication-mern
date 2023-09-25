@@ -46,9 +46,9 @@ const Register = () => {
 	}, [isSuccess, isError, data, error])
 
 	return (
-		<div className='min-h-screen sm:flex sm:flex-row mx-0 justify-center'>
+		<div className='min-h-screen flex sm:flex-row mx-4 justify-center'>
 			<div className='flex justify-center self-center  z-10'>
-				<div className='p-10 bg-white mx-auto rounded-2xl w-100  border-2  mt-6 sm:mt-0 shadow-lg'>
+				<div className='py-10 px-5 bg-white mx-auto rounded-2xl   border-2  mt-6 sm:mt-0 shadow-lg'>
 					<div className='mb-4'>
 						<h3 className='font-semibold text-2xl text-gray-800'>Sign Up </h3>
 						<p className='text-gray-500 mt-1'>
@@ -207,13 +207,10 @@ const Register = () => {
 					</form>
 					<div className='pt-3 text-center tracking-wider font-semibold '>
 						<Link
-							className='text-gray-600 hover:text-black transition-colors duration-300'
+							className='text-gray-600 hover:text-black transition-colors duration-300 text-sm sm:text-lg'
 							to='/login'>
 							Allready have an account Sign In ?
 						</Link>
-					</div>
-					<div className='pt-5 text-center text-gray-400 text-xs'>
-						Copyright © 2022-2023{" "}
 					</div>
 				</div>
 			</div>

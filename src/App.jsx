@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ProtectedRoutes from "./ProtectedRoutes";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
 	return (
@@ -49,6 +50,12 @@ const App = () => {
 							<ProtectedRoutes>
 								<ChangePassword />
 							</ProtectedRoutes>
+						}
+					/>
+					<Route
+						path='*'
+						element={
+							<PageNotFound />
 						}
 					/>
 				</Routes>
