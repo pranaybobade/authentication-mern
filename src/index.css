@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input-type-style {
+    @apply w-full text-base px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-400 capitalize
+}
+.email{
+    @apply lowercase
+}
+.link-button-style{
+    @apply inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
+}
