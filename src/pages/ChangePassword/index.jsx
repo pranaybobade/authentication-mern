@@ -18,7 +18,7 @@ const ChangePassword = () => {
 			return { ...prev, [name]: value };
 		});
 	};
-	console.log("passwodd", password, id);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		await newPassword({ id, password });
@@ -36,7 +36,7 @@ const ChangePassword = () => {
 			toast.error(error?.data?.message);
 		}
 	}, [response, navigate]);
-    
+
 	return (
 		<div className='w-full h-screen flex justify-center flex-col  max-w-sm bg-white m-auto px-4'>
 			<div className='flex flex-col items-center py-10  border border-gray-200 rounded-lg shadow '>
